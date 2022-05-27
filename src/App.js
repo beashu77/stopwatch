@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+// import {useState} from 'react';
+// import Todos from './components/Todos';
+// import Timer from './components/Timer'
 import './App.css';
-
-function App() {
+import Stopwatch from './components/Stopwatch';
+const App = () => {
+  //const [show,setShow] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div className='App' onClick={()=>setShow(!show)}>{show ? <Timer /> :"App" }
+    // {/* //<Todos /> */}
+
+    // </div>
+
+    <div className='App'>
+      <Stopwatch />
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
